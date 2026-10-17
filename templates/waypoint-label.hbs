@@ -1,0 +1,42 @@
+<div class="waypoint-label {{cssClass}}{{#if range.detailed}} sodl-range-detailed{{/if}}">
+    {{#if action.img}}
+    <div class="img" style="background-image: url('{{ action.img }}');"></div>
+    {{else if action.icon}}
+    <i class="icon {{action.icon}}"></i>
+    {{else if action.label}}
+    <label class="action-label">{{localize action.label}}</label>
+    {{/if}}
+    {{#if cost}}
+    <span class="total-measurement">{{cost.total}} {{cost.units}}</span>
+    {{#if cost.delta}}
+    <span class="delta-measurement">({{cost.delta}})</span>
+    {{/if}}
+    {{else}}
+    <span class="total-measurement">{{distance.total}} {{units}}</span>
+    {{#if distance.delta}}
+    <span class="delta-measurement">({{distance.delta}})</span>
+    {{/if}}
+    {{/if}}
+    {{#if range}}
+    <span class="sodl-range-band sodl-range-band--{{range.band}}">{{range.label}}</span>
+    {{/if}}
+    {{#if (and elevation (not elevation.hidden))}}
+    <i class="icon {{elevation.icon}}"></i>
+    <span class="total-elevation">{{elevation.total}} {{units}}</span>
+    {{#if elevation.delta}}
+    <span class="delta-elevation">({{elevation.delta}})</span>
+    {{/if}}
+    {{/if}}
+    {{#if secret}}
+    <i class="icon fa-solid fa-eye-slash"></i>
+    {{/if}}
+    {{#if range.inRange}}
+    <span class="sodl-range-options sodl-range-options--in"><i class="fa-solid fa-check"></i><span>{{range.inRange}}</span></span>
+    {{/if}}
+    {{#if range.farShot}}
+    <span class="sodl-range-options sodl-range-options--far-shot"><i class="fa-solid fa-triangle-exclamation"></i><span>{{range.farShot}} <em>({{range.farShotNote}})</em></span></span>
+    {{/if}}
+    {{#if range.outOfRange}}
+    <span class="sodl-range-options sodl-range-options--out"><i class="fa-solid fa-xmark"></i><span>{{range.outOfRange}}</span></span>
+    {{/if}}
+</div>

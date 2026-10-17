@@ -1,0 +1,28 @@
+{
+  "group": "sodl",
+  "platform": "foundry",
+  "icon": "fa-ruler",
+  "order": 40,
+  "text": {
+    "fr": {
+      "title": "Portées",
+      "summary": "Les portées du livre sur la table : sur la règle de mesure et avant chaque attaque.",
+      "features": [
+        "Tranche de portée affichée sur la règle : courte, moyenne, longue, extrême",
+        "Tir distant automatique : 1 désavantage jusqu'au double de la portée, avertissement au-delà",
+        "Allonge selon le Gabarit et les armes à Allonge +N",
+        "Distance mesurée entre les cases les plus proches des grandes créatures"
+      ]
+    },
+    "en": {
+      "title": "Ranges",
+      "summary": "The book's ranges on the table: on the measuring ruler and before every attack.",
+      "features": [
+        "Range band on the ruler: short, medium, long, extreme",
+        "Automatic far shot: 1 bane up to twice the range, a warning beyond",
+        "Reach from Size and Reach +N weapons",
+        "Distance measured between the nearest squares of large creatures"
+      ]
+    }
+  }
+}

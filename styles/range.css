@@ -1,0 +1,86 @@
+/* Same colours as the ruler line and the range rings (src/rules/range-style.js).
+   Every class is prefixed: Foundry and Font Awesome already use short names such as "far". */
+#measurement .waypoint-label .sodl-range-band {
+  padding: 0.1em 0.5em;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: var(--font-size-16);
+  font-weight: bold;
+  color: #fff;
+}
+
+#measurement .waypoint-label .sodl-range-band--short {
+  background: #2ecc40;
+  color: #111;
+}
+
+#measurement .waypoint-label .sodl-range-band--medium {
+  background: #ff851b;
+  color: #111;
+}
+
+#measurement .waypoint-label .sodl-range-band--long {
+  background: #0074d9;
+}
+
+#measurement .waypoint-label .sodl-range-band--extreme {
+  background: #b10dc9;
+}
+
+#measurement .waypoint-label .sodl-range-band--farShot {
+  background: #ffdc00;
+  color: #111;
+}
+
+#measurement .waypoint-label .sodl-range-band--beyond {
+  background: #ff4136;
+}
+
+/* With a token selected, the label also lists what it can and cannot reach, one line each. */
+#measurement .waypoint-label.sodl-range-detailed {
+  flex-wrap: wrap;
+  max-width: 30rem;
+  row-gap: 0.35rem;
+  background: rgba(10, 10, 10, 0.9);
+}
+
+/* Light text on the dark label; only the icon carries the colour. */
+#measurement .waypoint-label .sodl-range-options {
+  display: flex;
+  flex-basis: 100%;
+  align-items: baseline;
+  gap: 0.5em;
+  font-family: var(--font-body, inherit);
+  font-size: var(--font-size-16);
+  font-weight: 600;
+  text-transform: none;
+  color: #f2f2f2;
+  text-align: left;
+}
+
+#measurement .waypoint-label .sodl-range-options > i {
+  width: 1.1em;
+  text-align: center;
+}
+
+#measurement .waypoint-label .sodl-range-options em {
+  font-style: normal;
+  font-weight: normal;
+  color: #ffdc00;
+}
+
+#measurement .waypoint-label .sodl-range-options--in > i {
+  color: #2ecc40;
+}
+
+#measurement .waypoint-label .sodl-range-options--far-shot > i {
+  color: #ffdc00;
+}
+
+#measurement .waypoint-label .sodl-range-options--out {
+  color: #b5b5b5;
+}
+
+#measurement .waypoint-label .sodl-range-options--out > i {
+  color: #ff4136;
+}

@@ -1,0 +1,35 @@
+{
+  "SODLRANGE": {
+    "Bands": {
+      "reach": "allonge",
+      "short": "courte",
+      "medium": "moyenne",
+      "long": "longue",
+      "extreme": "extrême",
+      "farShot": "tir distant",
+      "beyond": "hors portée"
+    },
+    "Settings": {
+      "rulerBands": {
+        "Name": "Portée sur la règle",
+        "Hint": "Affiche la tranche de portée (courte, moyenne, longue, extrême) à côté de la distance mesurée avec la règle."
+      },
+      "attackWarning": {
+        "Name": "Avertir hors de portée",
+        "Hint": "Avant une attaque ou un sort, prévient si une cible est hors de portée de l'arme ou du sort. Le jet n'est jamais bloqué."
+      },
+      "farShotBane": {
+        "Name": "Tir distant automatique",
+        "Hint": "Une cible entre une et deux fois la portée d'une arme à distance reçoit automatiquement 1 désavantage (OSD01, Options des attaques à distance). Au-delà, l'attaque est signalée hors de portée."
+      }
+    },
+    "Warning": {
+      "OutOfRange": "{target} est hors de portée de {item} ({band}, {limit} m max) : la cible est à {distance} m.",
+      "FarShotPossible": "{target} est à {distance} m : tir distant possible avec {item}, avec 1 désavantage.",
+      "FarShotApplied": "Tir distant contre {target} ({distance} m) : 1 désavantage."
+    },
+    "Ruler": {
+      "FarShot": "1 désavantage"
+    }
+  }
+}

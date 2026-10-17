@@ -1,0 +1,49 @@
+{
+  "id": "sodl-range",
+  "title": "L'Ombre du Seigneur Démon - Portées",
+  "description": "Les portées du livre sur la table : tranche de portée affichée sur la règle de mesure, et avertissement quand une cible est hors de portée de l'arme ou du sort.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "demonlord",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.1.0",
+          "verified": "6.1.0"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Courbette"
+    }
+  ],
+  "url": "https://github.com/Stphn-Wrn/sodl-range",
+  "manifest": "https://raw.githubusercontent.com/Stphn-Wrn/sodl-range/main/module.json",
+  "download": "https://github.com/Stphn-Wrn/sodl-range/releases/download/v0.1.0/sodl-range.zip",
+  "license": "MIT",
+  "esmodules": [
+    "src/main.js"
+  ],
+  "styles": [
+    "styles/range.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

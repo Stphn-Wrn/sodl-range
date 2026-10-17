@@ -1,0 +1,35 @@
+{
+  "SODLRANGE": {
+    "Bands": {
+      "reach": "reach",
+      "short": "short",
+      "medium": "medium",
+      "long": "long",
+      "extreme": "extreme",
+      "farShot": "far shot",
+      "beyond": "out of range"
+    },
+    "Settings": {
+      "rulerBands": {
+        "Name": "Range on the ruler",
+        "Hint": "Shows the range band (short, medium, long, extreme) next to the distance measured with the ruler."
+      },
+      "attackWarning": {
+        "Name": "Out of range warning",
+        "Hint": "Before an attack or a spell, warns when a target is out of the weapon's or spell's range. The roll is never blocked."
+      },
+      "farShotBane": {
+        "Name": "Automatic far shot",
+        "Hint": "A target between one and two times a ranged weapon's range automatically gets 1 bane (core rules, ranged attack options). Beyond that, the attack is reported out of range."
+      }
+    },
+    "Warning": {
+      "OutOfRange": "{target} is out of range of {item} ({band}, {limit} yd max): it is {distance} yd away.",
+      "FarShotPossible": "{target} is {distance} yd away: far shot possible with {item}, with 1 bane.",
+      "FarShotApplied": "Far shot against {target} ({distance} yd): 1 bane."
+    },
+    "Ruler": {
+      "FarShot": "1 bane"
+    }
+  }
+}
